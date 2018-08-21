@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
+<<<<<<< HEAD
   productGUID: 200bc7449390c409e96e5e007b2e71da
+=======
+  productGUID: a4780479fa42e493fab1fa879a4c578c
+>>>>>>> develop
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -502,7 +506,11 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
+<<<<<<< HEAD
   psp2PackagePassword: zdNMK66MuCV6GXi5xr84P2R391UXaLHb
+=======
+  psp2PackagePassword: WRK5RhRXdCdG5nG5azdNMK66MuCV6GXi
+>>>>>>> develop
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0
@@ -632,9 +640,15 @@ PlayerSettings:
   cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
+<<<<<<< HEAD
   cloudProjectId: 0f1f80d7-1703-4488-b513-7491501505b5
   projectName: The Mush Attack
   organizationId: plauine
+=======
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
+>>>>>>> develop
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
