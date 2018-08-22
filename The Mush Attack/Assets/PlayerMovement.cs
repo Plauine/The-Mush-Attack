@@ -10,6 +10,12 @@ public class PlayerMovement : MonoBehaviour
     public float gravity = 20.0F;
 
     private Vector3 moveDirection = Vector3.zero;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -21,6 +27,12 @@ public class PlayerMovement : MonoBehaviour
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
+
+            if (!moveDirection.Equals(Vector3.zero)){
+                animator.SetBool("IsRunning", true);
+            } else {
+                animator.SetBool("IsRunning", false);
+            }
 
             if (Input.GetKey("space"))
             {
