@@ -6,11 +6,12 @@ public class CameraMovement : MonoBehaviour {
 
     public Transform player;
     public Vector3 offset;
+    public float smoothing = 5f;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = player.position + offset;
+        transform.position = Vector3.Lerp(transform.position, player.position + offset, smoothing * Time.deltaTime);
     }
 
 }
